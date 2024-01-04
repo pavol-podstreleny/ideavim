@@ -1,0 +1,22 @@
+imap jj <Esc> :action SaveDocument<CR>
+
+set relativenumber
+set NERDTree
+
+"Go to declaration / implementation
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap ga :action FindUsages<CR>
+
+"Close opened window
+nnoremap <c-w> :action CloseEditor<CR>
+
+"Terminal movement
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+
+"Navigation between tabs 
+nnoremap <TAB> :action NextTab<CR>
+nnoremap <BACKSPACE> :action PreviousTab<CR>
+
+"Recent files we recently visited (Edited)
+nnoremap <s-p> :action RecentFiles<CR>
